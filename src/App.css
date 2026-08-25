@@ -1,0 +1,8 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app > section {
+  margin-bottom: 40px;
+}
