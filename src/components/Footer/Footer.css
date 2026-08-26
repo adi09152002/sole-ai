@@ -1,0 +1,190 @@
+/* ===== Footer ===== */
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #000000;
+  overflow: hidden;
+}
+
+.footer__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1152px;
+  padding: 80px 24px;
+}
+
+/* ===== Top row ===== */
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 289px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8.4px;
+  overflow: hidden;
+}
+
+.footer__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__logo-text {
+  font-family: "Base Neue Trial", "PP Mori", sans-serif;
+  font-weight: 400;
+  font-size: 29.6px;
+  line-height: 90%;
+  letter-spacing: -0.84px;
+  color: #f5f8e8;
+}
+
+.footer__tagline {
+  margin: 0;
+  font-family: "PP Mori", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.81);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+}
+
+.footer__link-col {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__link {
+  font-family: "PP Mori", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  opacity: 0.75;
+}
+
+/* ===== Bottom row ===== */
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer__copyright {
+  font-family: "PP Mori", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ===== Watermark ===== */
+.footer__watermark {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 420px;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer__watermark-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1) brightness(3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+  .footer__inner {
+    padding: 60px 24px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer__links {
+    gap: 40px;
+  }
+
+  .footer__watermark {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

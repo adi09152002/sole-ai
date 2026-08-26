@@ -4,6 +4,11 @@ import Hero from "./components/Hero/Hero";
 import Overview from "./components/Overview/Overview";
 import SimpleFlow from "./components/SimpleFlow/SimpleFLow";
 import ReconciliationFlow from "./components/ReconciliationFlow/ReconciliationFlow";
+import RealClose from "./components/Realclose/Realclose";
+import FutureSolutions from "./components/Futuresolutions/Futuresolutions";
+import OurApproach from "./components/OurApproach/OurApproach";
+import FinalCta from "./components/FinalCta/FinalCta";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +18,12 @@ function App() {
       <Overview />
       <SimpleFlow />
       <ReconciliationFlow />
+      <RealClose />
+      <FutureSolutions />
+      <OurApproach  />
+      <FinalCta />
+      <Footer   />
+
     </div>
   );
 }

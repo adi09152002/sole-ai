@@ -1,0 +1,173 @@
+/* ===== Our Approach section ===== */
+.oa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 120px 60px 160px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Soft radial green gradient blob behind the content */
+.oa__glow {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  width: 1156px;
+  max-width: 160%;
+  height: 640px;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse 60% 55% at 50% 40%,
+    rgba(97, 163, 0, 0.28) 0%,
+    rgba(97, 163, 0, 0.12) 40%,
+    rgba(96, 171, 158, 0.1) 65%,
+    rgba(96, 171, 158, 0) 85%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===== Intro ===== */
+.oa__intro {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 560px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.oa__eyebrow {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #525252;
+}
+
+.oa__heading {
+  margin: 0;
+  font-family: "PP Mori", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  color: #000000;
+}
+
+/* ===== Card stack ===== */
+.oa__stack {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 949px;
+}
+
+.oa-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.oa-pair--large {
+  width: 100%;
+  max-width: 675px;
+}
+
+.oa-pair--small {
+  width: 75%;
+  max-width: 507px;
+  margin-top: 60px;
+  transform: scale(0.82);
+  transform-origin: top center;
+  opacity: 0.95;
+}
+
+/* ===== Cards ===== */
+.oa-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 28px;
+  border-radius: 12px;
+}
+
+.oa-card--positive {
+  background: linear-gradient(89.99deg, #92ac42 34.62%, #cfdfcf 99.99%);
+}
+
+.oa-card--negative {
+  background: transparent;
+  padding-left: 28px;
+}
+
+.oa-icon {
+  flex: none;
+  width: 21px;
+  height: 21px;
+}
+
+.oa-card__text {
+  margin: 0;
+  font-family: "PP Mori", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+
+.oa-card__text--negative {
+  font-weight: 400;
+  line-height: 28px;
+  color: #525252;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .oa {
+    padding: 80px 24px 100px;
+  }
+
+  .oa__heading {
+    font-size: 30px;
+  }
+
+  .oa-card {
+    padding: 16px 20px;
+    gap: 14px;
+  }
+
+  .oa-card__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .oa-pair--small {
+    transform: scale(1);
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .oa__intro {
+    margin-bottom: 60px;
+  }
+
+  .oa-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
