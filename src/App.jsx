@@ -2,7 +2,7 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Overview from "./components/Overview/Overview";
-import SimpleFlow from "./components/SimpleFlow/SimpleFLow";
+import SimpleFlow from "./components/SimpleFlow/SimpleFlow";
 import ReconciliationFlow from "./components/ReconciliationFlow/ReconciliationFlow";
 import RealClose from "./components/RealClose/RealClose";
 import FutureSolutions from "./components/FutureSolutions/FutureSolutions";
