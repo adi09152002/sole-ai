@@ -171,3 +171,110 @@
     align-items: flex-start;
   }
 }
+/* ============================================================
+   Animations
+   ============================================================ */
+ 
+@keyframes oa-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+/* Default: fully visible — browsers without scroll-driven animation
+   support just see the static content, no JS fallback needed. */
+.our-approach .frame,
+.our-approach .container-3,
+.our-approach .container-4,
+.our-approach .container-6,
+.our-approach .container-7 {
+  opacity: 1;
+}
+ 
+@supports (animation-timeline: view()) {
+  .our-approach .frame {
+    opacity: 0;
+    animation: oa-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 50%;
+  }
+ 
+  .our-approach .container-3 {
+    opacity: 0;
+    animation: oa-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+ 
+  .our-approach .container-4 {
+    opacity: 0;
+    animation: oa-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 8% entry 63%;
+  }
+ 
+  .our-approach .container-6 {
+    opacity: 0;
+    animation: oa-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+ 
+  .our-approach .container-7 {
+    opacity: 0;
+    animation: oa-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 8% entry 63%;
+  }
+}
+ 
+/* Hover interactions */
+.our-approach .container-3,
+.our-approach .container-4,
+.our-approach .container-6,
+.our-approach .container-7 {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+ 
+.our-approach .container-3:hover,
+.our-approach .container-6:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 28px rgba(107, 128, 36, 0.25);
+}
+ 
+.our-approach .container-4:hover,
+.our-approach .container-7:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+ 
+.our-approach .teenyicons-tick,
+.our-approach .teenyicons-tick-2,
+.our-approach .oui-cross-in-circle,
+.our-approach .oui-cross-in-circle-2 {
+  transition: transform 0.2s ease;
+}
+ 
+.our-approach .container-3:hover .teenyicons-tick,
+.our-approach .container-6:hover .teenyicons-tick-2,
+.our-approach .container-4:hover .oui-cross-in-circle,
+.our-approach .container-7:hover .oui-cross-in-circle-2 {
+  transform: scale(1.15);
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  .our-approach .frame,
+  .our-approach .container-3,
+  .our-approach .container-4,
+  .our-approach .container-6,
+  .our-approach .container-7 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

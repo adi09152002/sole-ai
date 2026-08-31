@@ -133,3 +133,112 @@
     font-size: 24px;
   }
 }
+/* ============================================================
+   Animations
+   ============================================================ */
+ 
+@keyframes fs-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+/* Default: fully visible. Browsers without scroll-driven animation
+   support (animation-timeline: view()) just see the static content —
+   no JS fallback needed. */
+.future-solutions .heading,
+.future-solutions .paragraph,
+.future-solutions .container-4,
+.future-solutions .container-5,
+.future-solutions .container-6 {
+  opacity: 1;
+}
+ 
+@supports (animation-timeline: view()) {
+  .future-solutions .heading {
+    opacity: 0;
+    animation: fs-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+ 
+  .future-solutions .paragraph {
+    opacity: 0;
+    animation: fs-fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 65%;
+  }
+ 
+  /* Each card's entry range is nudged slightly so they don't all
+     animate in at exactly the same scroll position — a cheap,
+     JS-free stagger. */
+  .future-solutions .container-3 .container-4,
+  .future-solutions .container-3 .container-5,
+  .future-solutions .container-3 .container-6 {
+    opacity: 0;
+    animation: fs-fade-up linear both;
+    animation-timeline: view();
+  }
+ 
+  .future-solutions .container-3 > *:nth-child(1) {
+    animation-range: entry 0% entry 50%;
+  }
+ 
+  .future-solutions .container-3 > *:nth-child(2) {
+    animation-range: entry 8% entry 58%;
+  }
+ 
+  .future-solutions .container-3 > *:nth-child(3) {
+    animation-range: entry 16% entry 66%;
+  }
+}
+ 
+/* Hover interactions */
+.future-solutions .container-4,
+.future-solutions .container-5,
+.future-solutions .container-6 {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+ 
+.future-solutions .container-4:hover,
+.future-solutions .container-5:hover,
+.future-solutions .container-6:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+ 
+.future-solutions .img,
+.future-solutions .img-2,
+.future-solutions .illustration-tax {
+  transition: transform 0.25s ease;
+}
+ 
+.future-solutions .container-4:hover .img,
+.future-solutions .container-5:hover .img,
+.future-solutions .container-6:hover .img,
+.future-solutions .container-4:hover .img-2,
+.future-solutions .container-5:hover .img-2,
+.future-solutions .container-6:hover .img-2,
+.future-solutions .container-4:hover .illustration-tax,
+.future-solutions .container-5:hover .illustration-tax,
+.future-solutions .container-6:hover .illustration-tax {
+  transform: scale(1.05);
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  .future-solutions .heading,
+  .future-solutions .paragraph,
+  .future-solutions .container-4,
+  .future-solutions .container-5,
+  .future-solutions .container-6 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+ 
