@@ -1,0 +1,41 @@
+/* Exercise 1 — nav underline that grows from the left.
+
+   Right now every underline is permanently visible. Your job:
+     1. Collapse .underline to zero width using transform: scaleX(0).
+     2. Tell it which edge to grow from with transform-origin.
+     3. Scale it back to 1 when the link is hovered (.link:hover .underline)
+        or keyboard-focused (.link:focus-visible .underline).
+     4. Add a transition on .underline so it animates instead of snapping.
+
+   Ask yourself: why scaleX instead of width? Animate width and the browser
+   redoes layout on every frame; scaleX is a compositor-only transform.
+
+   Stretch goal: make it grow from the left on enter but shrink out to the
+   right on leave, by swapping transform-origin inside the :hover rule. */
+
+.nav {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.link {
+  color: var(--practice-ink);
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.underline {
+  background: var(--practice-accent);
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+
+  /* TODO: hide it, set the origin, and transition the transform. */
+}
+
+/* TODO: .link:hover .underline { ... } */

@@ -1,0 +1,251 @@
+.reconciliation-flow {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 140px 50px;
+  position: relative;
+}
+
+.reconciliation-flow .container {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  max-height: 811px;
+  max-width: 1375px;
+  position: relative;
+  width: 100%;
+}
+
+.reconciliation-flow .container-wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 585px;
+  position: relative;
+  width: 100%;
+}
+
+.reconciliation-flow .div {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  margin-right: -347px;
+  position: relative;
+}
+
+.reconciliation-flow .container-2 {
+  align-items: flex-start;
+  background-color: #f4f7f0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 585px;
+  padding: 24px 48px;
+  position: relative;
+  width: 558px;
+}
+
+.reconciliation-flow .div-wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.reconciliation-flow .container-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.reconciliation-flow .text-wrapper {
+  color: #1c1e1a;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 31.2px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.reconciliation-flow .centra-shows-exactly {
+  align-self: stretch;
+  color: #1c1e1a;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+}
+
+.reconciliation-flow .img {
+  align-self: stretch;
+  height: 391.9px;
+  margin-bottom: -28.9px;
+  margin-left: -17px;
+  margin-right: -16px;
+  position: relative;
+  width: 100%;
+}
+
+.reconciliation-flow .artwork {
+  align-self: stretch;
+  height: 391.9px;
+  margin-bottom: -28.9px;
+  margin-left: -17px;
+  margin-right: -16px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.reconciliation-flow .artwork .img {
+  display: block;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.reconciliation-flow .a {
+  height: 22.91%;
+  left: 2.29%;
+  position: absolute;
+  top: 83.96%;
+  width: 16.36%;
+}
+
+.reconciliation-flow .img-2 {
+  align-self: stretch;
+  height: 397.9px;
+  margin-bottom: -28.9px;
+  margin-left: -17px;
+  margin-right: -16px;
+  position: relative;
+  width: 100%;
+}
+
+
+
+.reconciliation-flow .frame {
+  align-items: flex-start;
+  border-radius: 160.42px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16.2px;
+  left: calc(50.00% - 81px);
+  padding: 16.2px;
+  position: absolute;
+  top: 189px;
+}
+
+.reconciliation-flow .frame-wrapper {
+  align-items: center;
+  background-color: #cfd4c7d1;
+  border-radius: 1618.75px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16.2px;
+  justify-content: center;
+  padding: 6.48px;
+  position: relative;
+}
+
+.reconciliation-flow .frame-2 {
+  align-items: center;
+  background-color: #6b8024;
+  border-radius: 16777200px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  padding: 0px 16px;
+  position: relative;
+}
+
+.reconciliation-flow .text-wrapper-2 {
+  color: #efefef;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.12px;
+  line-height: 37.9px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.reconciliation-flow .mask-group {
+  height: 238px;
+  left: -22px;
+  position: absolute;
+  top: 1px;
+  width: 526px;
+}
+
+
+
+
+
+
+.reconciliation-flow .text-wrapper-3 {
+  color: #7a7974;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  line-height: 23.4px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.reconciliation-flow .button {
+  all: unset;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 3px;
+  justify-content: flex-end;
+  padding: 0px 12px;
+  position: relative;
+}
+
+.reconciliation-flow .text-wrapper-4 {
+  color: #202020;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  line-height: 23.4px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.reconciliation-flow .container-7 {
+  height: 585px;
+  position: relative;
+  width: 256px;
+}

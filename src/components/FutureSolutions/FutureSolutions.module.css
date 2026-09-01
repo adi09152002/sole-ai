@@ -1,0 +1,230 @@
+.future-solutions {
+  align-items: flex-end;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px 72px;
+  position: relative;
+}
+
+.future-solutions .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 228px;
+  max-width: 1512px;
+  padding: 16px 60px 72px;
+  position: relative;
+  width: 100%;
+}
+
+.future-solutions .div {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: -16px;
+  max-width: 560px;
+  position: relative;
+  width: 560px;
+}
+
+.future-solutions .heading {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.future-solutions .text-wrapper {
+  color: #000000;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 40px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 560px;
+}
+
+.future-solutions .paragraph {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 528px;
+}
+
+.future-solutions .give-a-dedicated {
+  color: transparent;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 512px;
+}
+
+.future-solutions .span {
+  color: #26272b;
+}
+
+.future-solutions .text-wrapper-2 {
+  color: #000000;
+  font-family: "PP Mori-Medium", Helvetica;
+  font-weight: 500;
+}
+
+.future-solutions .container-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0px 60px;
+  position: relative;
+  width: 100%;
+}
+
+.future-solutions .container-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.future-solutions .container-4 {
+  align-items: flex-start;
+  background-color: #f4f5f4;
+  border-radius: 12px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  padding: 28px;
+  position: relative;
+}
+
+.future-solutions .img,
+.future-solutions .img-2,
+.future-solutions .illustration-tax {
+  height: auto;
+  margin: 0;
+  position: relative;
+  width: auto;
+}
+
+.future-solutions .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.future-solutions .div-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.future-solutions .text-wrapper-3 {
+  color: #000000;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.future-solutions .paragraph-align {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.future-solutions .p {
+  color: #0000008c;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+  line-height: 20px;
+  margin-top: -1px;
+  position: relative;
+  width: 260px;
+}
+
+.future-solutions .container-5 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #f4f5f4;
+  border-radius: 12px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 28px;
+  position: relative;
+}
+
+.future-solutions .container-6 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #f4f5f4;
+  border-radius: 12px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 28px;
+  position: relative;
+} 
+
+
+
+
+
+
+.future-solutions .container-4,
+.future-solutions .container-5,
+.future-solutions .container-6 {
+  transition: background-color 0.3s ease, transform 0.1s ease,
+    box-shadow 0.25s ease;
+}
+ 
+.future-solutions .container-4:hover,
+.future-solutions .container-5:hover,
+.future-solutions .container-6:hover {
+  background-color: #ced8ba82;
+  transform: translateY(-4px);
+}

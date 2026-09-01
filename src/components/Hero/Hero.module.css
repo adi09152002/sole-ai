@@ -1,0 +1,974 @@
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  padding: 90px 0px 0px;
+  position: relative;
+}
+
+.hero .container {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 555.2px;
+  position: relative;
+}
+
+.hero .one-platform-for {
+  color: #1c1e1a;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: -0.56px;
+  line-height: 48px;
+  margin-left: -56.4px;
+  margin-right: -56.4px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .container-margin {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 24px 0px;
+  position: relative;
+}
+
+.hero .earn-rewards-and {
+  color: #70707b;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 456px;
+}
+
+.hero .div {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 18px;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .link {
+  align-items: center;
+  background:
+    radial-gradient(
+      50% 50% at 51% 31%,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  border-radius: 12.08px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 16px 24px;
+  position: relative;
+}
+
+.hero .text-wrapper {
+  color: #ffffff;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .link-open-lightbox {
+  align-items: center;
+  border: 1px solid;
+  border-color: #8a8a90;
+  border-radius: 12.8px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 16px 24px;
+  position: relative;
+}
+
+.hero .div-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero .text-wrapper-2 {
+  color: #0e1e32;
+  font-family: "PP Mori-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .mockup-animation {
+  height: 707px;
+  position: relative;
+  width: 1434px;
+}
+
+.hero .image-photoroom {
+  aspect-ratio: 2.02;
+  height: 579px;
+  left: calc(50.00% - 577px);
+  position: absolute;
+  top: 27px;
+  width: 1170px;
+}
+
+.hero .orbits {
+  height: 836px;
+  left: calc(50.00% - 500px);
+  position: absolute;
+  top: -60px;
+  width: 1001px;
+}
+
+.hero .cards {
+  height: 602px;
+  left: -12px;
+  position: absolute;
+  top: 77px;
+  width: 1586px;
+}
+
+.hero .frame {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: flex-start;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background: linear-gradient(
+    105deg,
+    rgba(169, 203, 175, 0.4) 0%,
+    rgba(246, 245, 239, 0.12) 100%
+  );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0px -1px 17.3px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  left: 72px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 258px;
+}
+
+.hero .frame-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.hero .selfhst-amazon {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  aspect-ratio: 1;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background-color: #000000e6;
+  border-radius: 12px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  width: 45px;
+}
+
+.hero .frame-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 12px;
+  position: relative;
+  top: 11px;
+  width: 23px;
+}
+
+.hero .vector {
+  height: 17.56px;
+  position: relative;
+  width: 14.69px;
+}
+
+.hero .img {
+  height: 5.93px;
+  position: relative;
+  width: 22.53px;
+}
+
+.hero .frame-4 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+}
+
+.hero .frame-5 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.hero .frame-6 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 0px 0px 8px;
+  position: relative;
+}
+
+.hero .text-wrapper-3 {
+  color: #000000;
+  font-family: "GT America Trial-Md", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 23.8px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .text-wrapper-4 {
+  color: #323232;
+  font-family: "GT America Trial-Rg", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 23.8px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .frame-7 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 0px 0px 0px 8px;
+  position: relative;
+}
+
+.hero .p {
+  color: #000000;
+  font-family: "GT America Trial-Rg", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 14px;
+  margin-top: -1px;
+  position: relative;
+  width: 180px;
+}
+
+.hero .frame-8 {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: flex-start;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background: linear-gradient(
+    105deg,
+    rgba(169, 203, 175, 0.4) 0%,
+    rgba(246, 245, 239, 0.12) 100%
+  );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0px -1px 17.3px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  left: 1088px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 98px;
+}
+
+.hero .logos-shopify-wrapper {
+  align-items: center;
+  background-color: #ffffffc4;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  height: 45px;
+  justify-content: center;
+  padding: 4px;
+  position: relative;
+  width: 45px;
+}
+
+.hero .logos-shopify {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.hero .vector-2 {
+  height: 30.84px;
+  position: relative;
+  width: 26.94px;
+}
+
+.hero .vector-3 {
+  height: 88.00%;
+  left: 64.74%;
+  position: absolute;
+  top: 12.00%;
+  width: 35.26%;
+}
+
+.hero .vector-4 {
+  height: 65.67%;
+  left: 15.32%;
+  position: absolute;
+  top: 34.33%;
+  width: 84.68%;
+}
+
+.hero .frame-9 {
+  -webkit-backdrop-filter: blur(1.7px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: flex-start;
+  backdrop-filter: blur(1.7px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background: linear-gradient(
+    105deg,
+    rgba(169, 203, 175, 0.4) 0%,
+    rgba(246, 245, 239, 0.12) 100%
+  );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 15.57px;
+  box-shadow:
+    0px -0.86px 14.96px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5.19px;
+  left: 340px;
+  padding: 8.65px 0px;
+  position: absolute;
+  top: 1px;
+}
+
+.hero .frame-10 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0px 8.65px;
+  position: relative;
+  width: 100%;
+}
+
+.hero .frame-11 {
+  align-items: center;
+  background-color: #ffffffc4;
+  border-radius: 6.92px;
+  display: flex;
+  gap: 8.65px;
+  height: 38.92px;
+  justify-content: center;
+  padding: 3.46px;
+  position: relative;
+  width: 38.92px;
+}
+
+.hero .logos-shopify-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8.65px;
+  position: relative;
+}
+
+.hero .vector-5 {
+  height: 26.67px;
+  position: relative;
+  width: 23.3px;
+}
+
+.hero .frame-12 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 1.73px;
+  position: relative;
+}
+
+.hero .frame-13 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8.65px;
+  justify-content: center;
+  padding: 0px 0px 0px 6.92px;
+  position: relative;
+}
+
+.hero .text-wrapper-5 {
+  color: #000000;
+  font-family: "GT America Trial-Md", Helvetica;
+  font-size: 14.7px;
+  font-weight: 400;
+  letter-spacing: -0.17px;
+  line-height: 20.6px;
+  margin-top: -0.86px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .text-wrapper-6 {
+  color: #323232;
+  font-family: "GT America Trial-Rg", Helvetica;
+  font-size: 10.4px;
+  font-weight: 400;
+  letter-spacing: -0.17px;
+  line-height: 20.6px;
+  margin-top: -0.86px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .frame-14 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8.65px;
+  padding: 0px 0px 0px 6.92px;
+  position: relative;
+}
+
+.hero .text-wrapper-7 {
+  color: #000000;
+  font-family: "GT America Trial-Rg", Helvetica;
+  font-size: 10.4px;
+  font-weight: 400;
+  letter-spacing: -0.17px;
+  line-height: 12.1px;
+  margin-top: -0.86px;
+  position: relative;
+  width: 155.68px;
+}
+
+.hero .frame-15 {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: center;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background:
+    linear-gradient(
+      105deg,
+      rgba(169, 203, 175, 0.4) 0%,
+      rgba(246, 245, 239, 0.12) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(246, 245, 239, 0.12) 0%,
+      rgba(246, 245, 239, 0.12) 100%
+    );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0px -1px 17.3px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  gap: 10px;
+  left: 232px;
+  padding: 8px 14px;
+  position: absolute;
+  top: 132px;
+}
+
+.hero .text-wrapper-8 {
+  color: #000000;
+  font-family: "GT America Trial-Rg", Helvetica;
+  font-size: 19.7px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 23.8px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.hero .frame-16 {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: center;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background:
+    linear-gradient(
+      105deg,
+      rgba(169, 203, 175, 0.4) 0%,
+      rgba(246, 245, 239, 0.12) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(246, 245, 239, 0.12) 0%,
+      rgba(246, 245, 239, 0.12) 100%
+    );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0px -1px 17.3px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  gap: 10px;
+  left: 948px;
+  padding: 8px 14px;
+  position: absolute;
+  top: -8px;
+}
+
+.hero .frame-17 {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: center;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background:
+    linear-gradient(
+      105deg,
+      rgba(169, 203, 175, 0.4) 0%,
+      rgba(246, 245, 239, 0.12) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(246, 245, 239, 0.12) 0%,
+      rgba(246, 245, 239, 0.12) 100%
+    );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0px -1px 17.3px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  gap: 10px;
+  left: 1194px;
+  padding: 8px 14px;
+  position: absolute;
+  top: 276px;
+}
+
+.hero .frame-18 {
+  -webkit-backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  align-items: center;
+  backdrop-filter: blur(2px) brightness(100.0%) saturate(105.0%)
+    hue-rotate(10deg);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 245, 239, 0.12) 0%,
+    rgba(246, 245, 239, 0.12) 100%
+  );
+  border: 1.5px solid;
+  border-color: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0px -1px 17.3px #1d1d1d1c,
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+    inset -1px 0 1px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  gap: 10px;
+  left: 660px;
+  padding: 8px 14px;
+  position: absolute;
+  top: 35px;
+}
+
+.hero .mobile-screen {
+  align-items: center;
+  background-image: url(./rectangle-8.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 451px;
+  justify-content: center;
+  left: 522px;
+  position: absolute;
+  top: 109px;
+  width: 395px;
+}
+
+.hero .screen {
+  height: 633.15px;
+  margin-left: 5.6px;
+  margin-top: 236.6px;
+  position: relative;
+  width: 288.64px;
+}
+
+.hero .phone {
+  height: 590px;
+  left: 0;
+  position: absolute;
+  top: 27px;
+  width: 297px;
+}
+
+.hero .rectangle {
+  background-color: #dfe3f0;
+  border: 6.01px solid;
+  border-color: #000000;
+  border-radius: 32.74px;
+  height: 602px;
+  left: 2px;
+  position: absolute;
+  top: -6px;
+  width: 293px;
+}
+
+.hero .rectangle-2 {
+  background-color: #000000;
+  border-radius: 1.34px 0px 0px 1.34px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 69px;
+  width: 8px;
+}
+
+.hero .rectangle-3 {
+  background-color: #000000;
+  border-radius: 1.34px 0px 0px 1.34px;
+  height: 37px;
+  left: 0;
+  position: absolute;
+  top: 104px;
+  width: 8px;
+}
+
+.hero .rectangle-4 {
+  background-color: #000000;
+  border-radius: 1.34px 0px 0px 1.34px;
+  height: 37px;
+  left: 0;
+  position: absolute;
+  top: 153px;
+  width: 8px;
+}
+
+.hero .rectangle-5 {
+  background-color: #000000;
+  border-radius: 1.34px 0px 0px 1.34px;
+  height: 61px;
+  left: 289px;
+  position: absolute;
+  top: 118px;
+  transform: rotate(-180deg);
+  width: 8px;
+}
+
+.hero .your-photo {
+  background-color: #ffffff;
+  border-radius: 32.74px;
+  height: 590px;
+  left: 8px;
+  position: absolute;
+  top: 27px;
+  width: 273px;
+}
+
+.hero .content {
+  height: 507px;
+  left: 8px;
+  position: absolute;
+  top: 24px;
+  width: 281px;
+}
+
+.hero .status-bar {
+  height: 31px;
+  left: 8px;
+  position: absolute;
+  top: 29px;
+  width: 281px;
+}
+
+.hero .camera {
+  aspect-ratio: 3.31;
+  height: 26px;
+  left: calc(50.00% - 38px);
+  position: absolute;
+  top: 34px;
+  width: 86px;
+}
+
+.hero .mobile-screen-flat {
+  height: 519px;
+  left: 522px;
+  position: absolute;
+  top: 130px;
+  width: 395px;
+ 
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 var(--phone-fade-start, 62%),
+    transparent var(--phone-fade-end, 96%)
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    #000 var(--phone-fade-start, 62%),
+    transparent var(--phone-fade-end, 96%)
+  );
+}
+
+.hero .phone-layer {
+  filter: blur(var(--layer-blur));
+  height: 100%;
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent var(--layer-start),
+    #000 var(--layer-full)
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent var(--layer-start),
+    #000 var(--layer-full)
+  );
+}
+
+/* ── Ring rotation ─────────────────────────────────────────────────────────
+   The seven badges ride the ellipse drawn by orbits.svg — centred (729.5,
+   324.5) with radii 500 x 355 in .cards coordinates. One shared timeline walks
+   a badge through all seven slots; each joins it at a different phase via a
+   negative animation-delay, so they step round together, each landing where
+   its neighbour just left.
+
+   Coordinates are slot CENTRES, hence translate(-50%, -50%): the badges are
+   different widths ("Cards" is 82px, the Amazon card 255px) and only centring
+   keeps them on the ring. Waypoints follow the ellipse rather than cutting the
+   chord, and are spaced by an eased clock — so linear interpolation between
+   keyframes still leaves fast and arrives dead, which is what makes the hold
+   read as a stop. Slot 6 -> slot 0 is the long way round: 189 degrees under
+   the phone, faded out for the crossing. Slots are marked with data-ring in
+   Hero.tsx.
+
+   The keyframes are machine-generated and are not worth hand-tuning: their
+   percentages encode a 70/30 split of each stop — parked for 9.9668% of the
+   lap, travelling for the 4.3189% that follows, seven times over. Overall
+   speed is safe to change (see --ring-lap below); changing that ratio, or
+   moving a badge, means recomputing all 84 stops.
+
+   Resting centres, clockwise from 9 o'clock — these match the badges'
+   original Figma left/top + size/2 to within 0.4px:
+     0 .frame     (199.4, 294.9)      4 .frame-16 ( 989.2,  12.9)
+     1 .frame-15  (278.0, 152.9)      5 .frame-8  (1215.3, 134.9)
+     2 .frame-9   (450.6,  32.9)      6 .frame-17 (1266.5, 296.9)
+     3 .frame-18  (727.4, -21.0) */
+
+.hero {
+  /* SPEED KNOB: one full revolution. Everything scales with it — seven stops
+     per lap, each 14.29% of it, of which 70% is the pause. Larger is
+     slower. */
+  --ring-lap: 18040ms;
+}
+
+.hero .frame,
+.hero .frame-15,
+.hero .frame-9,
+.hero .frame-18,
+.hero .frame-16,
+.hero .frame-8,
+.hero .frame-17 {
+  animation: hero-ring var(--ring-lap) linear infinite;
+  left: 0;
+  top: 0;
+  will-change: transform;
+}
+
+.hero .frame { animation-delay: 0ms; transform: translate(-50%, -50%) translate(199.4px, 294.9px); }
+.hero .frame-15 { animation-delay: calc(var(--ring-lap) / 7 * -1); transform: translate(-50%, -50%) translate(278px, 152.9px); }
+.hero .frame-9 { animation-delay: calc(var(--ring-lap) / 7 * -2); transform: translate(-50%, -50%) translate(450.6px, 32.9px); }
+.hero .frame-18 { animation-delay: calc(var(--ring-lap) / 7 * -3); transform: translate(-50%, -50%) translate(727.4px, -21px); }
+.hero .frame-16 { animation-delay: calc(var(--ring-lap) / 7 * -4); transform: translate(-50%, -50%) translate(989.2px, 12.9px); }
+.hero .frame-8 { animation-delay: calc(var(--ring-lap) / 7 * -5); transform: translate(-50%, -50%) translate(1215.3px, 134.9px); }
+.hero .frame-17 { animation-delay: calc(var(--ring-lap) / 7 * -6); transform: translate(-50%, -50%) translate(1266.5px, 296.9px); }
+
+@keyframes hero-ring {
+  0% { transform: translate(-50%, -50%) translate(199.4px, 294.9px); opacity: 1; }
+  9.9668% { transform: translate(-50%, -50%) translate(199.4px, 294.9px); opacity: 1; }
+  10.3987% { transform: translate(-50%, -50%) translate(200.4px, 290.7px); opacity: 1; }
+  10.8306% { transform: translate(-50%, -50%) translate(206.4px, 270.5px); opacity: 1; }
+  11.2625% { transform: translate(-50%, -50%) translate(225.7px, 225.6px); opacity: 1; }
+  11.6944% { transform: translate(-50%, -50%) translate(245.6px, 193.1px); opacity: 1; }
+  12.1262% { transform: translate(-50%, -50%) translate(258.6px, 175.6px); opacity: 1; }
+  12.5581% { transform: translate(-50%, -50%) translate(267px, 165.3px); opacity: 1; }
+  12.99% { transform: translate(-50%, -50%) translate(272.4px, 159px); opacity: 1; }
+  13.4219% { transform: translate(-50%, -50%) translate(275.7px, 155.4px); opacity: 1; }
+  13.8538% { transform: translate(-50%, -50%) translate(277.5px, 153.5px); opacity: 1; }
+  14.2857% { transform: translate(-50%, -50%) translate(278px, 152.9px); opacity: 1; }
+  24.2525% { transform: translate(-50%, -50%) translate(278px, 152.9px); opacity: 1; }
+  24.6844% { transform: translate(-50%, -50%) translate(281.6px, 148.8px); opacity: 1; }
+  25.1163% { transform: translate(-50%, -50%) translate(300.1px, 129.7px); opacity: 1; }
+  25.5482% { transform: translate(-50%, -50%) translate(348.3px, 89.5px); opacity: 1; }
+  25.9801% { transform: translate(-50%, -50%) translate(390.1px, 62.6px); opacity: 1; }
+  26.412% { transform: translate(-50%, -50%) translate(415.1px, 49.2px); opacity: 1; }
+  26.8439% { transform: translate(-50%, -50%) translate(430.8px, 41.6px); opacity: 1; }
+  27.2757% { transform: translate(-50%, -50%) translate(440.6px, 37.2px); opacity: 1; }
+  27.7076% { transform: translate(-50%, -50%) translate(446.6px, 34.6px); opacity: 1; }
+  28.1395% { transform: translate(-50%, -50%) translate(449.7px, 33.3px); opacity: 1; }
+  28.5714% { transform: translate(-50%, -50%) translate(450.6px, 32.9px); opacity: 1; }
+  38.5382% { transform: translate(-50%, -50%) translate(450.6px, 32.9px); opacity: 1; }
+  38.9701% { transform: translate(-50%, -50%) translate(457.5px, 29.9px); opacity: 1; }
+  39.402% { transform: translate(-50%, -50%) translate(491.4px, 16.5px); opacity: 1; }
+  39.8339% { transform: translate(-50%, -50%) translate(573.7px, -6.8px); opacity: 1; }
+  40.2658% { transform: translate(-50%, -50%) translate(639.4px, -17.2px); opacity: 1; }
+  40.6977% { transform: translate(-50%, -50%) translate(676.8px, -20.2px); opacity: 1; }
+  41.1296% { transform: translate(-50%, -50%) translate(699.4px, -21px); opacity: 1; }
+  41.5615% { transform: translate(-50%, -50%) translate(713.4px, -21.2px); opacity: 1; }
+  41.9934% { transform: translate(-50%, -50%) translate(721.8px, -21.1px); opacity: 1; }
+  42.4252% { transform: translate(-50%, -50%) translate(726.1px, -21px); opacity: 1; }
+  42.8571% { transform: translate(-50%, -50%) translate(727.4px, -21px); opacity: 1; }
+  52.8239% { transform: translate(-50%, -50%) translate(727.4px, -21px); opacity: 1; }
+  53.2558% { transform: translate(-50%, -50%) translate(734.6px, -21.4px); opacity: 1; }
+  53.6877% { transform: translate(-50%, -50%) translate(769.5px, -22.5px); opacity: 1; }
+  54.1196% { transform: translate(-50%, -50%) translate(850.2px, -18.1px); opacity: 1; }
+  54.5515% { transform: translate(-50%, -50%) translate(911.3px, -8.4px); opacity: 1; }
+  54.9834% { transform: translate(-50%, -50%) translate(944.9px, -0.5px); opacity: 1; }
+  55.4153% { transform: translate(-50%, -50%) translate(964.9px, 5.1px); opacity: 1; }
+  55.8472% { transform: translate(-50%, -50%) translate(977.1px, 8.9px); opacity: 1; }
+  56.2791% { transform: translate(-50%, -50%) translate(984.4px, 11.3px); opacity: 1; }
+  56.711% { transform: translate(-50%, -50%) translate(988.1px, 12.5px); opacity: 1; }
+  57.1429% { transform: translate(-50%, -50%) translate(989.2px, 12.9px); opacity: 1; }
+  67.1096% { transform: translate(-50%, -50%) translate(989.2px, 12.9px); opacity: 1; }
+  67.5415% { transform: translate(-50%, -50%) translate(996.2px, 14.9px); opacity: 1; }
+  67.9734% { transform: translate(-50%, -50%) translate(1029.8px, 25.6px); opacity: 1; }
+  68.4053% { transform: translate(-50%, -50%) translate(1103.2px, 57.1px); opacity: 1; }
+  68.8372% { transform: translate(-50%, -50%) translate(1154.9px, 87.4px); opacity: 1; }
+  69.2691% { transform: translate(-50%, -50%) translate(1181.8px, 106.6px); opacity: 1; }
+  69.701% { transform: translate(-50%, -50%) translate(1197.2px, 118.9px); opacity: 1; }
+  70.1329% { transform: translate(-50%, -50%) translate(1206.4px, 126.8px); opacity: 1; }
+  70.5648% { transform: translate(-50%, -50%) translate(1211.8px, 131.6px); opacity: 1; }
+  70.9967% { transform: translate(-50%, -50%) translate(1214.5px, 134.1px); opacity: 1; }
+  71.4286% { transform: translate(-50%, -50%) translate(1215.3px, 134.9px); opacity: 1; }
+  81.3953% { transform: translate(-50%, -50%) translate(1215.3px, 134.9px); opacity: 1; }
+  81.8272% { transform: translate(-50%, -50%) translate(1218px, 139.1px); opacity: 1; }
+  82.2591% { transform: translate(-50%, -50%) translate(1230.2px, 159.8px); opacity: 1; }
+  82.691% { transform: translate(-50%, -50%) translate(1251.5px, 208.5px); opacity: 1; }
+  83.1229% { transform: translate(-50%, -50%) translate(1261.5px, 246.5px); opacity: 1; }
+  83.5548% { transform: translate(-50%, -50%) translate(1264.8px, 267.9px); opacity: 1; }
+  83.9867% { transform: translate(-50%, -50%) translate(1265.9px, 280.9px); opacity: 1; }
+  84.4186% { transform: translate(-50%, -50%) translate(1266.3px, 288.9px); opacity: 1; }
+  84.8505% { transform: translate(-50%, -50%) translate(1266.5px, 293.7px); opacity: 1; }
+  85.2824% { transform: translate(-50%, -50%) translate(1266.5px, 296.2px); opacity: 1; }
+  85.7143% { transform: translate(-50%, -50%) translate(1266.5px, 296.9px); opacity: 1; }
+  95.6811% { transform: translate(-50%, -50%) translate(1266.5px, 296.9px); opacity: 1; }
+  95.951% { transform: translate(-50%, -50%) translate(1267.4px, 308.9px); opacity: 0.947; }
+  96.2209% { transform: translate(-50%, -50%) translate(1265.8px, 355.5px); opacity: 0.741; }
+  96.4909% { transform: translate(-50%, -50%) translate(1231.3px, 461.3px); opacity: 0.259; }
+  96.7608% { transform: translate(-50%, -50%) translate(1055.8px, 626.8px); opacity: 0; }
+  97.0307% { transform: translate(-50%, -50%) translate(727.8px, 704.4px); opacity: 0; }
+  97.3007% { transform: translate(-50%, -50%) translate(476.1px, 658.3px); opacity: 0; }
+  97.5706% { transform: translate(-50%, -50%) translate(335.2px, 579.5px); opacity: 0; }
+  97.8405% { transform: translate(-50%, -50%) translate(261.6px, 505.5px); opacity: 0.026; }
+  98.1105% { transform: translate(-50%, -50%) translate(224.6px, 444.7px); opacity: 0.322; }
+  98.3804% { transform: translate(-50%, -50%) translate(207.1px, 397.1px); opacity: 0.541; }
+  98.6503% { transform: translate(-50%, -50%) translate(199.9px, 361px); opacity: 0.704; }
+  98.9203% { transform: translate(-50%, -50%) translate(197.7px, 334.5px); opacity: 0.823; }
+  99.1902% { transform: translate(-50%, -50%) translate(197.8px, 315.9px); opacity: 0.906; }
+  99.4601% { transform: translate(-50%, -50%) translate(198.5px, 303.7px); opacity: 0.961; }
+  99.7301% { transform: translate(-50%, -50%) translate(199.2px, 297px); opacity: 0.991; }
+  100% { transform: translate(-50%, -50%) translate(199.4px, 294.9px); opacity: 1; }
+}

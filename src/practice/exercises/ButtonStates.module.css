@@ -1,0 +1,61 @@
+/* Exercise 6 — press feedback and a spinner.
+
+   Your job:
+     1. Transition background-color and transform on .button.
+     2. On .button:active, scale it to about 0.96 so it depresses under the
+        cursor. Keep the duration short — 80-120ms. A press that takes 300ms
+        feels broken, because the real-world event it mimics is instant.
+     3. Write @keyframes spin (transform: rotate(0) to rotate(360deg)) and run
+        it on .spinner with animation-iteration-count: infinite and a linear
+        timing function. Linear matters: any easing makes a spinner stutter.
+
+   The spinner element is a bordered circle with one side coloured — the
+   border trick is already set up below, it just is not turning yet.
+
+   Stretch goal: animate the label swap too, so "Request access" fades out as
+   "Sending" fades in, instead of snapping. */
+
+.wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.button {
+  align-items: center;
+  background: var(--practice-accent);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 9px;
+  padding: 12px 24px;
+
+  /* TODO: transition background-color and transform. */
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+/* TODO: .button:active { ... } */
+
+.spinner {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  border-top-color: #fff;
+  height: 14px;
+  width: 14px;
+
+  /* TODO: run the spin animation here. */
+}
+
+.caption {
+  color: var(--practice-muted);
+  font-size: 12px;
+}
+
+/* TODO: @keyframes spin { ... } */

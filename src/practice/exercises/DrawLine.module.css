@@ -1,0 +1,35 @@
+/* Exercise 4 — the self-drawing line.
+
+   The trick: a dashed stroke where the dash is exactly as long as the whole
+   path, then pushed out of view by its own length. Slide the offset back to
+   zero and the line appears to draw itself.
+
+   Your job:
+     1. On .path set stroke-dasharray: 1 (the path is normalised to length 1
+        by pathLength="1" in the TSX, so 1 means "the entire path").
+     2. Write @keyframes draw: from stroke-dashoffset 1, to 0.
+     3. Apply it — around 1.2s, and try ease-in-out.
+     4. Fade .dot in only after the line lands, using animation-delay plus
+        fill-mode backwards.
+
+   Note stroke-dashoffset is NOT compositor-accelerated — this one repaints.
+   That is fine for a single decorative path; it would not be fine for fifty.
+
+   Stretch goal: reverse it. animation-direction: reverse erases the line. */
+
+.svg {
+  color: var(--practice-accent);
+  height: 120px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.path {
+  /* TODO: dasharray, then the draw animation. */
+}
+
+.dot {
+  /* TODO: start at opacity 0 and fade in after the line finishes. */
+}
+
+/* TODO: @keyframes draw { ... } */

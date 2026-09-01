@@ -1,0 +1,55 @@
+/* Exercise 2 — staggered entrance.
+
+   All three elements are sitting in their final position. Your job:
+     1. Write one @keyframes (call it fade-up): from opacity 0 and
+        translateY(20px), to opacity 1 and translateY(0).
+     2. Apply it to .headline, .subhead and .cta.
+     3. Offset each with animation-delay — try 0ms / 90ms / 180ms.
+     4. Now watch the flash: during the delay the element still renders at its
+        normal opacity. Fix it with animation-fill-mode: backwards (or the
+        shorthand `both`). This is the single most common beginner trap.
+
+   Use the Replay button to re-run without reloading the page.
+
+   Stretch goal: replace the three hardcoded delays with one rule using
+   nth-child, or drive them from a --i custom property set per element. */
+
+@keyframes fade-up {
+  /* TODO */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 420px;
+  text-align: center;
+}
+
+.headline {
+  font-size: 26px;
+  letter-spacing: -0.02em;
+
+  /* TODO: animation: fade-up ... */
+}
+
+.subhead {
+  color: var(--practice-muted);
+  font-size: 15px;
+  line-height: 1.6;
+
+  /* TODO */
+}
+
+.cta {
+  align-self: center;
+  background: var(--practice-accent);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 22px;
+
+  /* TODO */
+}

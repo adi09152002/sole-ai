@@ -1,0 +1,193 @@
+.our-approach {
+  height: 998px;
+  position: relative;
+  width: 1470px;
+}
+
+.our-approach .bg-gradient {
+  height: 792px;
+  left: 153px;
+  position: absolute;
+  top: 156px;
+  width: 1156px;
+}
+
+.our-approach .ellipse {
+  height: 643px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1156px;
+}
+
+.our-approach .img {
+  height: 643px;
+  left: 0;
+  position: absolute;
+  top: 149px;
+  width: 1156px;
+}
+
+.our-approach .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: calc(50.00% - 735px);
+  max-width: 1512px;
+  padding: 60px;
+  position: absolute;
+  top: 249px;
+  width: 1470px;
+}
+
+.our-approach .frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+}
+
+.our-approach .text-wrapper {
+  color: #525252;
+  font-family: "DM Mono-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.our-approach .div {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 560px;
+  position: relative;
+  width: 560px;
+}
+
+.our-approach .heading {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.our-approach .the-platform-will {
+  color: #000000;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 48px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 505px;
+}
+
+.our-approach .teenyicons-tick {
+  aspect-ratio: 1;
+  background-image: url(./vector.svg);
+  background-size: 100% 100%;
+  height: 21px;
+  position: relative;
+  width: 21px;
+}
+
+.our-approach .p {
+  color: #ffffff;
+  font-family: "PP Mori-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  line-height: 40px;
+  margin-right: -5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.our-approach .oui-cross-in-circle {
+  aspect-ratio: 1;
+  background-image: url(./image.svg);
+  background-size: 100% 100%;
+  height: 21px;
+  position: relative;
+  width: 21px;
+}
+
+.our-approach .always-up-to-date {
+  color: #525252;
+  flex: 1;
+  font-family: "PP Mori-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 28px;
+  margin-top: -1px;
+  position: relative;
+}
+
+/* ── Approach list (static) ─────────────────────────────────────────────
+   Animation removed — rows are now stacked at fixed positions instead of
+   scrolling. Row pitch (154px) and geometry kept the same as before so
+   the layout still lines up with the rest of the design.
+
+   Row geometry: 675x118, 28px side padding, 20px between icon and text. */
+
+.our-approach .marquee {
+  --marquee-row: 118px;
+
+  height: 616px; /* 4 rows * 154px pitch, minus the gap after the last row */
+  left: calc(50% - 337.5px);
+  overflow: hidden;
+  position: absolute;
+  top: 500px;
+  width: 675px;
+}
+
+.our-approach .marquee-row {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  height: var(--marquee-row);
+  left: 0;
+  padding: 0px 28px;
+  position: absolute;
+  width: 100%;
+}
+
+.our-approach .marquee-row:nth-child(1) {
+  top: 0px;
+}
+
+.our-approach .marquee-row:nth-child(2) {
+  top: 154px;
+}
+
+.our-approach .marquee-row:nth-child(3) {
+  top: 308px;
+}
+
+.our-approach .marquee-row:nth-child(4) {
+  top: 462px;
+}
+
+.our-approach .marquee-row-highlight {
+  background: linear-gradient(
+    90deg,
+    rgba(146, 172, 66, 1) 35%,
+    rgba(207, 223, 207, 1) 100%
+  );
+}

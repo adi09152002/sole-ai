@@ -1,0 +1,61 @@
+.simple-flow {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 826px;
+  justify-content: center;
+  max-width: 1512px;
+  padding: 80px 60px;
+  position: relative;
+  width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  min-height: 826px;
+}
+
+
+
+
+
+ 
+.simple-flow .art-slideshow {
+  aspect-ratio: 1350 / 824;
+  margin: 0 auto;
+  max-width: 1350px;
+  position: relative;
+  width: 100%;
+}
+ 
+.simple-flow .svg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  animation-name: svg-cycle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+ 
+@keyframes svg-cycle {
+  0%     { opacity: 1; }
+  10.5%  { opacity: 1; }
+  12.5%  { opacity: 0; }
+  98%    { opacity: 0; }
+  100%   { opacity: 1; }
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  .simple-flow .svg-slide {
+    animation: none;
+  }
+  .simple-flow .svg-slide:first-child {
+    opacity: 1;
+  }
+}
+ 

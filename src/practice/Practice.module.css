@@ -1,0 +1,168 @@
+/* ---------------------------------------------------------------
+   Practice playground chrome.
+
+   This file styles the page *around* the exercises. You should not
+   need to edit it — do your work in exercises/<Name>.module.css.
+   --------------------------------------------------------------- */
+
+.page {
+  --practice-accent: var(--primitives-color-olive-500, rgba(107, 128, 36, 1));
+  --practice-ink: #16181d;
+  --practice-muted: #6b7280;
+  --practice-line: #e5e7eb;
+  --practice-surface: #ffffff;
+
+  background: #f7f7f5;
+  color: var(--practice-ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  padding: 48px 24px 96px;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+.masthead {
+  border-bottom: 1px solid var(--practice-line);
+  padding-bottom: 24px;
+}
+
+.eyebrow {
+  color: var(--practice-accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+}
+
+.lede {
+  color: var(--practice-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 12px;
+  max-width: 62ch;
+}
+
+.backLink {
+  color: var(--practice-accent);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.note {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  color: #78350f;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 24px;
+  padding: 12px 14px;
+}
+
+.card {
+  background: var(--practice-surface);
+  border: 1px solid var(--practice-line);
+  border-radius: 12px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.cardHead {
+  border-bottom: 1px solid var(--practice-line);
+  display: flex;
+  gap: 16px;
+  padding: 20px 24px;
+}
+
+.number {
+  background: var(--practice-accent);
+  border-radius: 999px;
+  color: #fff;
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  width: 26px;
+}
+
+.cardTitle {
+  font-size: 17px;
+}
+
+.brief {
+  color: var(--practice-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.learn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.chip {
+  background: #f3f4f6;
+  border-radius: 999px;
+  color: #374151;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 11px;
+  padding: 4px 9px;
+}
+
+.file {
+  color: var(--practice-muted);
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.stage {
+  background: repeating-conic-gradient(#fafafa 0% 25%, #ffffff 0% 50%) 50% / 16px 16px;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  padding: 36px 24px;
+}
+
+.stageFlush {
+  align-items: stretch;
+  padding: 0;
+}
+
+.replay {
+  align-items: center;
+  border-top: 1px solid var(--practice-line);
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 24px;
+}
+
+.replayButton {
+  background: var(--practice-ink);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+  transition: opacity 150ms ease;
+}
+
+.replayButton:hover {
+  opacity: 0.85;
+}
