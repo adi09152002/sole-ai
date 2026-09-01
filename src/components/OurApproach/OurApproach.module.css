@@ -36,7 +36,7 @@
   max-width: 1512px;
   padding: 60px;
   position: absolute;
-  top: 249px;
+  top: 192px;
   width: 1470px;
 }
 
@@ -138,26 +138,53 @@
   position: relative;
 }
 
-/* ── Approach list (static) ─────────────────────────────────────────────
-   Animation removed — rows are now stacked at fixed positions instead of
-   scrolling. Row pitch (154px) and geometry kept the same as before so
-   the layout still lines up with the rest of the design.
+/* ── Approach marquee ──────────────────────────────────────────────────────
+   The points scroll upward and re-enter from the bottom.
 
-   Row geometry: 675x118, 28px side padding, 20px between icon and text. */
+   There is no duplicated markup: each row runs the same keyframe on its own
+   timeline, staggered by a negative animation-delay of one lap / row count.
+   One row is always entering as another leaves, so the flow is continuous
+   from a single copy of the list.
+
+   Row pitch is therefore a function of the timing, not a margin:
+     pitch = (--marquee-view + --marquee-row) / rows = (498 + 118) / 4 = 154px
+   The count must stay EVEN or the card/text alternation collides at the
+   seam, and every :nth-child delay below has to be respaced with it.
+
+   Row geometry is the old .container-3: 675x118, 28px side padding, 20px
+   between icon and text. */
 
 .our-approach .marquee {
+  --marquee-view: 430px;
   --marquee-row: 118px;
+  --marquee-lap: 19s;
 
-  height: 616px; /* 4 rows * 154px pitch, minus the gap after the last row */
+  height: var(--marquee-view);
   left: calc(50% - 337.5px);
   overflow: hidden;
   position: absolute;
-  top: 500px;
+  top: 420px;
   width: 675px;
+  /* soften the cut where rows enter and leave */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 14%,
+    #000 86%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 14%,
+    #000 86%,
+    transparent 100%
+  );
 }
 
 .our-approach .marquee-row {
   align-items: center;
+  animation: approach-rise var(--marquee-lap) linear infinite;
   border-radius: 12px;
   display: flex;
   gap: 20px;
@@ -165,23 +192,22 @@
   left: 0;
   padding: 0px 28px;
   position: absolute;
+  top: 0;
   width: 100%;
+  will-change: transform;
 }
 
-.our-approach .marquee-row:nth-child(1) {
-  top: 0px;
-}
-
+/* one delay per row: -lap * index / row count */
 .our-approach .marquee-row:nth-child(2) {
-  top: 154px;
+  animation-delay: calc(var(--marquee-lap) / -4);
 }
 
 .our-approach .marquee-row:nth-child(3) {
-  top: 308px;
+  animation-delay: calc(var(--marquee-lap) / -4 * 2);
 }
 
 .our-approach .marquee-row:nth-child(4) {
-  top: 462px;
+  animation-delay: calc(var(--marquee-lap) / -4 * 3);
 }
 
 .our-approach .marquee-row-highlight {
@@ -190,4 +216,31 @@
     rgba(146, 172, 66, 1) 35%,
     rgba(207, 223, 207, 1) 100%
   );
+}
+
+@keyframes approach-rise {
+  from {
+    transform: translateY(var(--marquee-view));
+  }
+  to {
+    transform: translateY(calc(var(--marquee-row) * -1));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .our-approach .marquee-row {
+    animation: none;
+  }
+  /* stack them statically instead of piling up at top: 0 */
+  .our-approach .marquee-row:nth-child(2) {
+    top: 154px;
+  }
+
+  .our-approach .marquee-row:nth-child(3) {
+    top: 308px;
+  }
+
+  .our-approach .marquee-row:nth-child(4) {
+    top: 462px;
+  }
 }
