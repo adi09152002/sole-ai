@@ -249,3 +249,110 @@
   position: relative;
   width: 256px;
 }
+
+/* ============================================================
+   RESPONSIVE / MOBILE OVERRIDES
+   ============================================================
+   Desktop lays the three .container-2 cards in a single row and
+   deliberately overflows the third one off the right edge
+   (.div's margin-right: -347px = 3*558 + 2*24 - 1375, the exact
+   overflow past the 1375px container) as a "there's more" visual
+   tease. There's no scroll behavior behind that on desktop — it's
+   a static bleed.
+
+   On mobile there's no room to bleed a 558px card past the edge
+   and still show anything useful, so the same idea is carried
+   forward as an actual interaction: a horizontally swipeable,
+   scroll-snapping carousel. Each card still peeks in from the
+   edge (via width < 100%), but now the person can swipe to it
+   instead of it just being visually cut off. No TSX change is
+   needed — .div already wraps exactly the three cards. */
+
+@media (max-width: 1024px) {
+  .reconciliation-flow {
+    padding: 0 0 100px 24px;
+  }
+
+  .reconciliation-flow .container,
+  .reconciliation-flow .container-wrapper {
+    height: auto;
+    max-height: none;
+    max-width: 100%;
+  }
+
+  .reconciliation-flow .div {
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    margin-right: 0;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    padding-right: 24px;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+  }
+
+  .reconciliation-flow .container-2 {
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 480px;
+    padding: 20px 28px;
+    scroll-snap-align: start;
+    width: min(480px, 85vw);
+  }
+
+  .reconciliation-flow .text-wrapper {
+    font-size: 20px;
+    line-height: 26px;
+    white-space: normal;
+  }
+
+  .reconciliation-flow .centra-shows-exactly {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .reconciliation-flow .img,
+  .reconciliation-flow .artwork,
+  .reconciliation-flow .img-2 {
+    height: 340px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reconciliation-flow {
+    padding: 0 0 80px 16px;
+  }
+
+  .reconciliation-flow .div {
+    gap: 12px;
+    padding-right: 16px;
+  }
+
+  .reconciliation-flow .container-2 {
+    min-height: 440px;
+    padding: 18px 20px;
+    width: 88vw;
+  }
+
+  .reconciliation-flow .text-wrapper {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reconciliation-flow .img,
+  .reconciliation-flow .artwork,
+  .reconciliation-flow .img-2 {
+    height: 260px;
+  }
+}
+
+/* Hide the scrollbar for the carousel while keeping it swipeable */
+@media (max-width: 1024px) {
+  .reconciliation-flow .div {
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .reconciliation-flow .div::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+}

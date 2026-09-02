@@ -330,3 +330,192 @@
   top: -8px;
   width: 581px;
 }
+
+/* ============================================================
+   TABLET — 1024px and below
+   Footer content wraps to 2 columns and picks up side padding
+   since it no longer has 1152px of room to breathe in.
+   ============================================================ */
+@media (max-width: 1024px) {
+  .final-cta-footer .container-3 {
+    max-width: 100%;
+    width: 100%;
+    padding: 64px 40px;
+    box-sizing: border-box;
+  }
+
+  .final-cta-footer .container-5 {
+    gap: 40px;
+  }
+}
+
+/* ============================================================
+   MOBILE — 768px and below
+   The desktop version pins every section to a fixed pixel
+   height/width (952px outer wrapper, absolute-positioned CTA
+   copy, a 1152px-wide footer, a 204px nav column with a
+   negative margin hack, etc). None of that survives a narrow
+   viewport, so below this breakpoint we:
+   - let sections size to their content (height: auto) instead
+     of a fixed px height
+   - switch the hero's absolutely-positioned text block back
+     to normal flow so it can't overflow or overlap
+   - stack the footer's columns (brand block, link columns,
+     bottom bar) vertically
+   - shrink type sizes so headlines/paragraphs don't force
+     horizontal scrolling
+   ============================================================ */
+@media (max-width: 768px) {
+  .final-cta-footer {
+    height: auto;
+  }
+
+  .final-cta-footer .container {
+    height: auto;
+    top: 0;
+    padding: 80px 24px 64px;
+    box-sizing: border-box;
+  }
+
+  .final-cta-footer .cta {
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  /* Decorative blurred background: scale it down instead of
+     letting it dictate an 1470px-wide scroll area. */
+  .final-cta-footer .mask-group {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1470 / 906;
+    margin: -80px 0;
+  }
+
+  /* Was absolutely positioned + horizontally centered via a
+     calc() built for a 555px-wide desktop block; on mobile it
+     just needs to sit in normal flow, full width. */
+  .final-cta-footer .div {
+    position: relative;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .final-cta-footer .one-platform-for {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+    margin-left: 0;
+    margin-right: 0;
+    white-space: normal;
+    width: 100%;
+  }
+
+  .final-cta-footer .container-margin {
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .final-cta-footer .earn-rewards-and {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .final-cta-footer .container-2 {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .final-cta-footer .container-3 {
+    padding: 56px 24px;
+    gap: 40px;
+  }
+
+  .final-cta-footer .container-4 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .final-cta-footer .container-5 {
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .final-cta-footer .centralize-helps-top {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .final-cta-footer .container-6 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .final-cta-footer .container-7 {
+    width: auto;
+    min-width: 120px;
+  }
+
+  /* This column relied on a fixed 204px width plus a -113px
+     right margin to overlap the next column on desktop — on
+     mobile that just needs to be a normal block. */
+  .final-cta-footer .link-2 {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .final-cta-footer .container-8 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .final-cta-footer .container-9 {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Purely decorative art behind the logo; on narrow screens
+     it has nowhere safe to sit without overlapping text, so
+     it's hidden rather than squeezed. */
+  .final-cta-footer .freepik-background {
+    display: none;
+  }
+}
+
+/* ============================================================
+   SMALL PHONES — 480px and below
+   ============================================================ */
+@media (max-width: 480px) {
+  .final-cta-footer .one-platform-for {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .final-cta-footer .container-2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .final-cta-footer .link {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .final-cta-footer .container-6 {
+    gap: 24px;
+  }
+
+  .final-cta-footer .container-9 {
+    gap: 12px;
+  }
+}

@@ -58,4 +58,38 @@
     opacity: 1;
   }
 }
- 
+
+/* ============================================================
+   RESPONSIVE / MOBILE OVERRIDES
+   ============================================================
+   The slideshow itself was already built responsively — width:
+   100%, aspect-ratio, max-width — so it scales down cleanly on
+   its own without any changes here.
+
+   The one thing that doesn't scale is the fixed min-height:
+   826px on .simple-flow. That's roughly right for desktop, but
+   at mobile widths the aspect-ratio box gets much shorter (e.g.
+   ~207px tall at a 340px content width), so the 826px floor just
+   leaves a large empty gap around a small slideshow. These rules
+   relax that floor and trim the desktop padding to match. */
+
+@media (max-width: 1024px) {
+  .simple-flow {
+    gap: 24px;
+    min-height: 0;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .simple-flow {
+    padding: 48px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .simple-flow {
+    gap: 20px;
+    padding: 40px 16px;
+  }
+}

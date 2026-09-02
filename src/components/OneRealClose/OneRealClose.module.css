@@ -235,4 +235,120 @@
 .container .div-5:hover::before {
   height: 100%;
 }
- 
+
+/* ============================================================
+   RESPONSIVE / MOBILE OVERRIDES
+   ============================================================
+   Desktop is a fixed two-column row: a 683x702 art panel next to
+   a 683px-wide text column (with 519/520px inner rows). Below
+   1024px the columns stack, and every fixed width becomes fluid
+   (100% / max-width) so the panel and text never overflow a
+   narrow viewport. */
+
+@media (max-width: 1024px) {
+  .section-art {
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px;
+  }
+
+  .section-art .container-art {
+    aspect-ratio: 683 / 702; /* preserves the original art proportions */
+    height: auto;
+    max-width: 683px;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container .div {
+    gap: 32px;
+    height: auto;
+    width: 100%;
+  }
+
+  .container .the-dirhams-no {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .container .frame-2 {
+    gap: 24px;
+    width: 100%;
+  }
+
+  .container .div-3,
+  .container .div-4,
+  .container .div-5 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container .link {
+    height: 44px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-art {
+    padding: 60px 24px;
+  }
+
+  .container .one-real-close {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .container .the-dirhams-no {
+    font-size: 26px;
+    letter-spacing: -0.3px;
+    line-height: 32px;
+  }
+
+  .container .p {
+    font-size: 15px;
+    white-space: normal;
+  }
+
+  .container .always-up-to-date {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-art {
+    gap: 32px;
+    padding: 48px 16px;
+  }
+
+  .container .the-dirhams-no {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .container .div-4,
+  .container .div-5 {
+    padding: 16px 4px;
+  }
+
+  /* the hover-triggered left accent bar and slide-in only make
+     sense on pointer/hover-capable devices; on touch, skip the
+     shift so tapping doesn't leave rows visually offset */
+}
+
+@media (hover: none) {
+  .container .div-4:hover,
+  .container .div-5:hover {
+    transform: none;
+  }
+
+  .container .div-4:hover::before,
+  .container .div-5:hover::before {
+    height: 0%;
+  }
+}

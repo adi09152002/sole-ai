@@ -972,3 +972,162 @@
   99.7301% { transform: translate(-50%, -50%) translate(199.2px, 297px); opacity: 0.991; }
   100% { transform: translate(-50%, -50%) translate(199.4px, 294.9px); opacity: 1; }
 }
+
+/* ============================================================
+   RESPONSIVE / MOBILE OVERRIDES
+   ============================================================
+   The desktop rules above are all fixed-pixel/absolute (this is a
+   Figma export), so instead of rewriting every coordinate for
+   every breakpoint, the whole animated scene (.mockup-animation,
+   which is 1434x707 and contains everything absolutely positioned
+   inside it — orbits, cards, phone, badges) is scaled down as one
+   block with `transform: scale()`. That keeps all the orbit math
+   above correct at any size.
+
+   REQUIRED MARKUP CHANGE: this only works if the element with
+   class "mockup-animation" is wrapped in a container, e.g. in
+   Hero.tsx:
+
+     <div className="mockup-animation-wrapper">
+       <div className="mockup-animation">
+         ...orbits/cards/phone/badges...
+       </div>
+     </div>
+
+   The wrapper clips the scaled-down box and reserves the right
+   amount of vertical space (height = 707 * scale for that
+   breakpoint) so the rest of the page doesn't jump. */
+
+.hero .mockup-animation-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    gap: 40px;
+    padding: 64px 24px 0;
+  }
+
+  .hero .container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .hero .one-platform-for {
+    font-size: 40px;
+    line-height: 44px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
+    white-space: normal;
+    width: auto;
+  }
+
+  .hero .earn-rewards-and {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .hero .mockup-animation-wrapper {
+    height: 424px; /* 707 * 0.6 */
+    max-width: 860px; /* 1434 * 0.6 */
+    margin: 0 auto;
+  }
+
+  .hero .mockup-animation {
+    transform: scale(0.6);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    gap: 32px;
+    padding: 48px 16px 0;
+  }
+
+  .hero .one-platform-for {
+    font-size: 32px;
+    letter-spacing: -0.3px;
+    line-height: 36px;
+  }
+
+  .hero .earn-rewards-and {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 340px;
+  }
+
+  .hero .div {
+    flex-direction: column;
+    gap: 12px;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .hero .link,
+  .hero .link-open-lightbox {
+    justify-content: center;
+    padding: 14px 20px;
+    width: 100%;
+  }
+
+  .hero .mockup-animation-wrapper {
+    height: 297px; /* 707 * 0.42 */
+    max-width: 602px; /* 1434 * 0.42 */
+  }
+
+  .hero .mockup-animation {
+    transform: scale(0.42);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    gap: 24px;
+    padding: 40px 12px 0;
+  }
+
+  .hero .one-platform-for {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .hero .earn-rewards-and {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 280px;
+  }
+
+  .hero .mockup-animation-wrapper {
+    height: 198px; /* 707 * 0.28 */
+    max-width: 402px; /* 1434 * 0.28 */
+  }
+
+  .hero .mockup-animation {
+    transform: scale(0.28);
+  }
+
+  /* the orbit is small on-screen here, so slow it down a touch —
+     a fast lap reads as jittery at this scale */
+  .hero {
+    --ring-lap: 24000ms;
+  }
+}
+
+/* Respect reduced-motion preference regardless of breakpoint */
+@media (prefers-reduced-motion: reduce) {
+  .hero .frame,
+  .hero .frame-15,
+  .hero .frame-9,
+  .hero .frame-18,
+  .hero .frame-16,
+  .hero .frame-8,
+  .hero .frame-17 {
+    animation: none;
+  }
+}

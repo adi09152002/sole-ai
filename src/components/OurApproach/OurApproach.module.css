@@ -244,3 +244,128 @@
     top: 462px;
   }
 }
+
+/* ============================================================
+   RESPONSIVE / MOBILE OVERRIDES
+   ============================================================
+   Desktop lays this whole section out with absolute positioning
+   inside a fixed 1470x998 canvas: a decorative gradient/ellipse
+   backdrop, a centered heading block, and a marquee — all pinned
+   to hardcoded top/left coordinates that only make sense at that
+   exact canvas size.
+
+   Unlike the hero animation (pure decoration, safe to scale down
+   as one image), this section has real content people need to
+   read: the 40px heading and the marquee copy. Shrinking the
+   whole canvas down to phone width would shrink that text to the
+   point of being unreadable. So instead, on smaller screens the
+   layout switches from "absolute canvas" to a normal stacked
+   flex column — background as a full-bleed backdrop layer,
+   heading and marquee flowing on top of it at their own natural
+   sizes. */
+
+@media (max-width: 1024px) {
+  .our-approach {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden; /* clip the decorative ellipses to the section */
+    padding: 100px 40px 60px;
+    width: 100%;
+  }
+
+  .our-approach .bg-gradient {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .our-approach .ellipse,
+  .our-approach .img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .our-approach .container {
+    left: auto;
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+    top: auto;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .our-approach .div,
+  .our-approach .heading {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .our-approach .the-platform-will {
+    font-size: 30px;
+    line-height: 38px;
+    width: 100%;
+  }
+
+  .our-approach .marquee {
+    left: auto;
+    margin: 40px auto 0;
+    max-width: 675px;
+    position: relative;
+    top: auto;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-approach {
+    padding: 80px 24px 48px;
+  }
+
+  .our-approach .text-wrapper {
+    font-size: 14px;
+  }
+
+  .our-approach .the-platform-will {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .our-approach .marquee-row {
+    gap: 14px;
+    padding: 0 16px;
+  }
+
+  .our-approach .p,
+  .our-approach .always-up-to-date {
+    font-size: 15px;
+    line-height: 22px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-approach {
+    padding: 64px 16px 40px;
+  }
+
+  .our-approach .the-platform-will {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .our-approach .marquee-row {
+    gap: 12px;
+    padding: 0 12px;
+  }
+}
